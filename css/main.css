@@ -219,6 +219,7 @@ body {
 }
 
 .take-order__title {
+  position: relative;
   color: var(--white-color-text);
   font-weight: 500;
   font-size: 24px;
@@ -230,11 +231,10 @@ body {
   content: "";
   position: absolute;
   left: -15px;
-  right: 0px;
+  right: -18px;
   bottom: -35px;
-  top: 65px;
+  top: 25px;
   height: 20px;
-  margin-bottom: 10px;
   background-image: url(../src/images/icons/icon-line-mobile-1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -257,9 +257,9 @@ body {
   content: "";
   position: absolute;
   left: -15px;
-  right: 0px;
+  right: -18px;
   bottom: -43px;
-  top: 70px;
+  top: 30px;
   height: 20px;
   background-image: url(../src/images/icons/icon-line-mobile-2.png);
   background-repeat: no-repeat;
@@ -321,6 +321,10 @@ body {
   display: flex;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+.take-order__contacts {
+  margin-bottom: 24px;
 }
 
 .take-order__contacts--title {
@@ -404,4 +408,13 @@ body {
   height: 97px;
   background-color: transparent;
   border: 1px solid var(--light-green-color);
+}
+
+.btn-first {
+  margin-bottom: 16px;
+}
+
+.addcard-btn {
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=main.css.map */
