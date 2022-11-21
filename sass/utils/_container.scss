@@ -1,0 +1,14 @@
+.container {
+  padding-right: 18px;
+  padding-left: 17px;
+
+  @include tablet {
+    width: $tablet;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include desktop {
+    width: $desktop;
+  }
+}
