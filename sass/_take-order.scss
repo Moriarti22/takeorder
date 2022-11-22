@@ -14,6 +14,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include desktop {
+        max-width: $desktop;
+    }
 }
 
 .take-order__title {
@@ -28,6 +31,10 @@
     @include tablet {
         font-size: 56px;
         margin-bottom: 51px;
+    }
+
+    @include desktop {
+        margin-bottom: 75px
     }
 }
 
@@ -44,9 +51,10 @@
     background-size: contain;
 
     @include tablet {
-    left: -142px;
+    left: -40px;
     right: -40px;
     top: 55px;
+    bottom: -35px;
     background-image: url(../src/images/icons/icon-line-tablet-1.png);
     }
 
@@ -98,7 +106,25 @@
     line-height: 1.17;
     margin-bottom: 24px;
     }
+    @include desktop {
+        font-size: 56px;
+        line-height: 1.16;
+    }
 }
+
+.take-order__name--first {
+    @include desktop {
+        display: none;
+    }
+}
+
+.take-order__name--second {
+    display: none;
+    @include desktop {
+        display: inline-block;
+    }
+}
+
 
 .take-order__image--big {
     @include tablet {
@@ -118,7 +144,7 @@
     display: flex;
     gap: 40px;
     margin-bottom: 24px;
-    align-items: flex-end;
+    align-items: center;
     }
 }
 
@@ -170,6 +196,19 @@
     }
 }
 
+.take-order__small-foto--two {
+    @include desktop {
+        display: none;
+    }
+}
+
+.take-order__small-foto--one {
+    display: none;
+    @include desktop {
+        display: flex;
+    }
+}
+
 .take-order__contacts {
     margin-bottom: 24px;
 }
@@ -181,6 +220,12 @@
     font-size: 24px;
     line-height: 1.16;
     margin-bottom: 16px;
+
+    @include tablet {
+        margin-bottom: 48px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .take-order__field:not(:last-child) {
@@ -239,6 +284,9 @@
 
 .btn-first {
     margin-bottom: 16px;
+    @include tablet {
+        margin-bottom: 24px;
+    }
 }
 
 .addcard-btn {

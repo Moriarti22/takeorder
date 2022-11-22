@@ -226,6 +226,11 @@ body {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order {
+    max-width: 1280px;
+  }
+}
 
 .take-order__title {
   position: relative;
@@ -239,6 +244,11 @@ body {
   .take-order__title {
     font-size: 56px;
     margin-bottom: 51px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .take-order__title {
+    margin-bottom: 75px;
   }
 }
 
@@ -256,9 +266,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .take-order__title::before {
-    left: -142px;
+    left: -40px;
     right: -40px;
     top: 55px;
+    bottom: -35px;
     background-image: url(../src/images/icons/icon-line-tablet-1.png);
   }
 }
@@ -318,6 +329,27 @@ body {
     margin-bottom: 24px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order__name {
+    font-size: 56px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .take-order__name--first {
+    display: none;
+  }
+}
+
+.take-order__name--second {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .take-order__name--second {
+    display: inline-block;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .take-order__image--big {
@@ -336,7 +368,7 @@ body {
     display: flex;
     gap: 40px;
     margin-bottom: 24px;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 
@@ -391,6 +423,21 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .take-order__small-foto--two {
+    display: none;
+  }
+}
+
+.take-order__small-foto--one {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .take-order__small-foto--one {
+    display: flex;
+  }
+}
+
 .take-order__contacts {
   margin-bottom: 24px;
 }
@@ -401,6 +448,13 @@ body {
   font-size: 24px;
   line-height: 1.16;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .take-order__contacts--title {
+    margin-bottom: 48px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .take-order__field:not(:last-child) {
@@ -483,6 +537,11 @@ body {
 
 .btn-first {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .btn-first {
+    margin-bottom: 24px;
+  }
 }
 
 .addcard-btn {
