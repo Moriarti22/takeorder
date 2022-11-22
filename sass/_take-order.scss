@@ -55,12 +55,14 @@
     right: -40px;
     top: 55px;
     bottom: -35px;
+    height: 40px;
     background-image: url(../src/images/icons/icon-line-tablet-1.png);
     }
 
     @include desktop {
     background-image: url(../src/images/icons/icon-line-desktop-1.png);
-    }
+    right: -41px;
+}
 }
 
 .take-order__title::after {
@@ -76,14 +78,16 @@
     background-size: contain;
 
     @include tablet {
-    left: -142px;
+    left: -40px;
     right: -40px;
     bottom: -35px;
     top: 63px;
+    height: 40px;
     background-image: url(../src/images/icons/icon-line-tablet-2.png);
     }
 
     @include desktop {
+    right: -41px;
     background-image: url(../src/images/icons/icon-line-desktop-2.png);
     }
 }
@@ -109,6 +113,7 @@
     @include desktop {
         font-size: 56px;
         line-height: 1.16;
+        margin-bottom: 32px;
     }
 }
 
@@ -121,7 +126,7 @@
 .take-order__name--second {
     display: none;
     @include desktop {
-        display: inline-block;
+    display: inline-block;
     }
 }
 
@@ -148,6 +153,7 @@
     @include desktop {
         gap: 121px;
         margin-bottom: 48px;
+        align-items: stretch;
     }
 }
 
@@ -175,6 +181,11 @@
         margin-bottom: 40px;
     }
 
+}
+
+.take-order__left {
+    display: flex;
+    flex-direction: column;
 }
 
 .take-order__price-old {
@@ -234,6 +245,13 @@
     margin-bottom: 24px;
 }
 
+.take-order__contacts--desktop {
+    @include desktop {
+    display: flex;
+    gap: 20px;
+    }
+}
+
 .take-order__contacts--title {
     color: var(--light-green-color);
 
@@ -288,6 +306,10 @@
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 40px;
+
+    @include desktop {
+        width: 590px;
+    }
 }
 
 .take-order__textarea {
@@ -300,7 +322,7 @@
     border: 1px solid var(--light-green-color);
     @include desktop {
         width: 589px;
-        height: 360px;
+        height: 256px;
     }
 }
 

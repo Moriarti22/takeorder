@@ -246,73 +246,79 @@
           <div class="take-order__contacts">
             <p class="take-order__contacts--title">CONTACT US</p>
             <form>
-              <ul>
-                <li class="take-order__field">
-                  <!-- <label class="take-order__label" for="name"></label> -->
-                  <input
-                    class="take-order__input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                  />
-                </li>
-                <li class="take-order__field">
-                  <input
-                    class="take-order__input"
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    placeholder="Email"
-                  />
-                </li>
-                <li class="take-order__field">
-                  <input
-                    class="take-order__input"
-                    list="browsers"
-                    name="choose"
-                    id="choose"
-                    placeholder="Color Option"
-                  />
+              <div class="take-order__contacts--desktop">
+                <div class="take-input__desktop">
+                  <ul>
+                    <li class="take-order__field">
+                      <!-- <label class="take-order__label" for="name"></label> -->
+                      <input
+                        class="take-order__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                      />
+                    </li>
+                    <li class="take-order__field">
+                      <input
+                        class="take-order__input"
+                        type="email"
+                        name="mail"
+                        id="mail"
+                        placeholder="Email"
+                      />
+                    </li>
+                    <li class="take-order__field">
+                      <input
+                        class="take-order__input"
+                        list="browsers"
+                        name="choose"
+                        id="choose"
+                        placeholder="Color Option"
+                      />
 
-                  <datalist class="take-order__browsers" id="browsers">
-                    <option class="browsers-option">K9D Black Orange</option>
-                    <option class="browsers-option">K9D Silver Gray</option>
-                    <option class="browsers-option">K9U White Blue</option>
-                  </datalist>
-                </li>
-                <li class="take-order__field">
-                  <input
-                    class="take-order__input"
-                    list="quantity"
-                    name="choose"
-                    id="choose"
-                    placeholder="Quantity"
-                  />
-                  <datalist class="take-order__browsers" id="quantity">
-                  </datalist>
-                </li>
-                <li class="take-order__field">
-                  <input
-                    class="take-order__input"
-                    list="payment"
-                    name="choose"
-                    id="choose"
-                    placeholder="Payment"
-                  />
-                  <datalist class="take-order__browsers" id="payment">
-                  </datalist>
-                </li>
-              </ul>
-              <div class="take-order__field">
-                <label class="take-order__label" for="comment"
-                  >Leave your message</label
-                >
-                <textarea
-                  class="take-order__textarea"
-                  name="comment"
-                  id="comment"
-                ></textarea>
+                      <datalist class="take-order__browsers" id="browsers">
+                        <option class="browsers-option">
+                          K9D Black Orange
+                        </option>
+                        <option class="browsers-option">K9D Silver Gray</option>
+                        <option class="browsers-option">K9U White Blue</option>
+                      </datalist>
+                    </li>
+                    <li class="take-order__field">
+                      <input
+                        class="take-order__input"
+                        list="quantity"
+                        name="choose"
+                        id="choose"
+                        placeholder="Quantity"
+                      />
+                      <datalist class="take-order__browsers" id="quantity">
+                      </datalist>
+                    </li>
+                    <li class="take-order__field">
+                      <input
+                        class="take-order__input"
+                        list="payment"
+                        name="choose"
+                        id="choose"
+                        placeholder="Payment"
+                      />
+                      <datalist class="take-order__browsers" id="payment">
+                      </datalist>
+                    </li>
+                  </ul>
+                </div>
+                <div class="take-order__field">
+                  <label class="take-order__label" for="comment"
+                    >Leave your message</label
+                  >
+                  <textarea
+                    class="take-order__textarea"
+                    name="comment"
+                    id="comment"
+                  ></textarea>
+                </div>
               </div>
             </form>
           </div>

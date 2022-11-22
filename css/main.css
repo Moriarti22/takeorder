@@ -270,12 +270,14 @@ body {
     right: -40px;
     top: 55px;
     bottom: -35px;
+    height: 40px;
     background-image: url(../src/images/icons/icon-line-tablet-1.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .take-order__title::before {
     background-image: url(../src/images/icons/icon-line-desktop-1.png);
+    right: -41px;
   }
 }
 
@@ -293,15 +295,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .take-order__title::after {
-    left: -142px;
+    left: -40px;
     right: -40px;
     bottom: -35px;
     top: 63px;
+    height: 40px;
     background-image: url(../src/images/icons/icon-line-tablet-2.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .take-order__title::after {
+    right: -41px;
     background-image: url(../src/images/icons/icon-line-desktop-2.png);
   }
 }
@@ -333,6 +337,7 @@ body {
   .take-order__name {
     font-size: 56px;
     line-height: 1.16;
+    margin-bottom: 32px;
   }
 }
 
@@ -375,6 +380,7 @@ body {
   .take-order-nameprice {
     gap: 121px;
     margin-bottom: 48px;
+    align-items: stretch;
   }
 }
 
@@ -403,6 +409,11 @@ body {
     align-items: center;
     margin-bottom: 40px;
   }
+}
+
+.take-order__left {
+  display: flex;
+  flex-direction: column;
 }
 
 .take-order__price-old {
@@ -470,6 +481,13 @@ body {
 
 .take-order__contacts {
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1280px) {
+  .take-order__contacts--desktop {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .take-order__contacts--title {
@@ -551,6 +569,11 @@ body {
   line-height: 1.25;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 1280px) {
+  .take-order__field {
+    width: 590px;
+  }
+}
 
 .take-order__textarea {
   width: 100%;
@@ -564,7 +587,7 @@ body {
 @media screen and (min-width: 1280px) {
   .take-order__textarea {
     width: 589px;
-    height: 360px;
+    height: 256px;
   }
 }
 
