@@ -371,6 +371,12 @@ body {
     align-items: center;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order-nameprice {
+    gap: 121px;
+    margin-bottom: 48px;
+  }
+}
 
 .take-order__price {
   display: flex;
@@ -389,6 +395,15 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
 
 .take-order__price-old {
   color: var(--grey-color);
@@ -396,6 +411,11 @@ body {
   font-size: 16px;
   line-height: 1;
   text-decoration: line-through;
+}
+@media screen and (min-width: 1280px) {
+  .take-order__price-old {
+    margin-right: 40px;
+  }
 }
 
 .take-order__price-new {
@@ -411,6 +431,11 @@ body {
     margin-top: 56px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order__price-new {
+    margin-top: 0px;
+  }
+}
 
 .take-order__small-foto {
   display: flex;
@@ -420,6 +445,11 @@ body {
 @media screen and (min-width: 768px) {
   .take-order__small-foto {
     margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .take-order__small-foto {
+    margin-bottom: 0px;
   }
 }
 
@@ -455,10 +485,6 @@ body {
     font-size: 36px;
     line-height: 1.17;
   }
-}
-
-.take-order__field:not(:last-child) {
-  margin-bottom: 40px;
 }
 
 .take-order__input {
@@ -523,6 +549,7 @@ body {
   color: var(--white-color-text);
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 40px;
 }
 
 .take-order__textarea {
@@ -534,6 +561,23 @@ body {
   background-color: transparent;
   border: 1px solid var(--light-green-color);
 }
+@media screen and (min-width: 1280px) {
+  .take-order__textarea {
+    width: 589px;
+    height: 360px;
+  }
+}
+
+.addcard-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1280px) {
+  .addcard-btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .btn-first {
   margin-bottom: 16px;
@@ -543,8 +587,16 @@ body {
     margin-bottom: 24px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .btn-first {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+}
 
-.addcard-btn {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1280px) {
+  .take-order__btn {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

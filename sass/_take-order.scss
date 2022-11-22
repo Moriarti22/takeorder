@@ -140,11 +140,14 @@
 
 .take-order-nameprice {
     @include tablet {
-
     display: flex;
     gap: 40px;
     margin-bottom: 24px;
     align-items: center;
+    }
+    @include desktop {
+        gap: 121px;
+        margin-bottom: 48px;
     }
 }
 
@@ -164,6 +167,14 @@
         flex-direction: column;
     }
 
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
 }
 
 .take-order__price-old {
@@ -172,6 +183,9 @@
     font-size: 16px;
     line-height: 1;
     text-decoration: line-through;
+    @include desktop {
+        margin-right: 40px;
+    }
 }
 
 .take-order__price-new {
@@ -185,6 +199,10 @@
     @include tablet {
         margin-top: 56px;
     }
+
+    @include desktop {
+        margin-top: 0px;
+    }
 }
 
 .take-order__small-foto {
@@ -193,6 +211,9 @@
     margin-bottom: 32px;
     @include tablet {
         margin-bottom: 48px;
+    }
+    @include desktop {
+        margin-bottom: 0px;
     }
 }
 
@@ -226,10 +247,6 @@
         font-size: 36px;
         line-height: 1.17;
     }
-}
-
-.take-order__field:not(:last-child) {
-    margin-bottom: 40px;
 }
 
 .take-order__input {
@@ -270,6 +287,7 @@
     color: var(--white-color-text);
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 40px;
 }
 
 .take-order__textarea {
@@ -280,6 +298,19 @@
     line-height: 1.25;
     background-color: transparent;
     border: 1px solid var(--light-green-color);
+    @include desktop {
+        width: 589px;
+        height: 360px;
+    }
+}
+
+.addcard-btn {
+    margin-left: auto;
+    margin-right: auto;
+    @include desktop {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .btn-first {
@@ -287,9 +318,15 @@
     @include tablet {
         margin-bottom: 24px;
     }
+    @include desktop {
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
 }
 
-.addcard-btn {
-    margin-left: auto;
-    margin-right: auto;
+.take-order__btn {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
 }
