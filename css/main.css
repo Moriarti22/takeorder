@@ -215,15 +215,11 @@ body {
   min-width: 320px;
   padding-top: 40px;
   padding-bottom: 48px;
-}
-@media screen and (min-width: 480px) {
-  .take-order {
-    max-width: 480px;
-  }
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .take-order {
-    width: 768px;
+    max-width: 768px;
     padding-top: 120px;
     padding-bottom: 120px;
     margin-left: auto;
@@ -242,14 +238,14 @@ body {
 @media screen and (min-width: 768px) {
   .take-order__title {
     font-size: 56px;
-    margin-bottom: 24px;
+    margin-bottom: 51px;
   }
 }
 
 .take-order__title::before {
   content: "";
   position: absolute;
-  left: -15px;
+  left: -17px;
   right: -18px;
   bottom: -35px;
   top: 25px;
@@ -275,7 +271,7 @@ body {
 .take-order__title::after {
   content: "";
   position: absolute;
-  left: -15px;
+  left: -17px;
   right: -18px;
   bottom: -43px;
   top: 30px;
@@ -315,11 +311,33 @@ body {
   line-height: 1.19;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .take-order__name {
+    font-size: 55px;
+    line-height: 1.17;
+    margin-bottom: 24px;
+  }
+}
 
-.take-order-nameprice {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+  .take-order__image--big {
+    width: 387px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .take-order__image {
+    width: 154px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .take-order-nameprice {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 24px;
+    align-items: flex-end;
+  }
 }
 
 .take-order__price {
@@ -336,6 +354,7 @@ body {
     height: 100%;
     width: 100%;
     justify-content: space-around;
+    flex-direction: column;
   }
 }
 
@@ -355,11 +374,21 @@ body {
   font-size: 32px;
   line-height: 1;
 }
+@media screen and (min-width: 768px) {
+  .take-order__price-new {
+    margin-top: 56px;
+  }
+}
 
 .take-order__small-foto {
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .take-order__small-foto {
+    margin-bottom: 48px;
+  }
 }
 
 .take-order__contacts {

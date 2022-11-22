@@ -5,12 +5,10 @@
     min-width: 320px;
     padding-top: 40px;
     padding-bottom: 48px;
-    @include mobile {
-        max-width: $mobile;
-    }
+    max-width: $mobile;
 
     @include tablet {
-        width: $tablet;
+        max-width: $tablet;
         padding-top: 120px;
         padding-bottom: 120px;
         margin-left: auto;
@@ -29,14 +27,14 @@
 
     @include tablet {
         font-size: 56px;
-        margin-bottom: 24px;
+        margin-bottom: 51px;
     }
 }
 
 .take-order__title::before {
     content: "";
     position: absolute;
-    left: -15px;
+    left: -17px;
     right: -18px;
     bottom: -35px;
     top: 25px;
@@ -60,7 +58,7 @@
 .take-order__title::after {
     content: "";
     position: absolute;
-    left: -15px;
+    left: -17px;
     right: -18px;
     bottom: -43px;
     top: 30px;
@@ -95,12 +93,33 @@
     font-size: 32px;
     line-height: 1.19;
     margin-bottom: 16px;
+    @include tablet {
+    font-size: 55px;
+    line-height: 1.17;
+    margin-bottom: 24px;
+    }
+}
+
+.take-order__image--big {
+    @include tablet {
+        width: 387px;
+    }
+}
+
+.take-order__image {
+    @include tablet {
+        width: 154px;
+    }
 }
 
 .take-order-nameprice {
+    @include tablet {
+
     display: flex;
     gap: 40px;
     margin-bottom: 24px;
+    align-items: flex-end;
+    }
 }
 
 .take-order__price {
@@ -116,6 +135,7 @@
         height: 100%;
         width: 100%;
         justify-content:space-around;
+        flex-direction: column;
     }
 
 }
@@ -136,12 +156,18 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 1;
+    @include tablet {
+        margin-top: 56px;
+    }
 }
 
 .take-order__small-foto {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    @include tablet {
+        margin-bottom: 48px;
+    }
 }
 
 .take-order__contacts {
