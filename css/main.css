@@ -367,6 +367,11 @@ body {
     width: 154px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .take-order__image {
+    width: 155px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .take-order-nameprice {

@@ -141,6 +141,9 @@
     @include tablet {
         width: 154px;
     }
+    @include desktop {
+        width: 155px;
+    }
 }
 
 .take-order-nameprice {
