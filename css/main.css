@@ -310,15 +310,6 @@ body {
   }
 }
 
-.take-order__item {
-  width: 288px;
-}
-@media screen and (min-width: 768px) {
-  .take-order__item {
-    width: 100%;
-  }
-}
-
 .take-order__name {
   color: var(--white-color-text);
   font-weight: 500;
@@ -596,19 +587,9 @@ body {
   }
 }
 
-.addcard-btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 1280px) {
-  .addcard-btn {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 .btn-first {
   margin-bottom: 16px;
+  width: 173px;
 }
 @media screen and (min-width: 768px) {
   .btn-first {
@@ -622,9 +603,14 @@ body {
   }
 }
 
+.take-order__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (min-width: 1280px) {
   .take-order__btn {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

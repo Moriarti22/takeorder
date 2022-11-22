@@ -92,13 +92,6 @@
     }
 }
 
-.take-order__item {
-    width: 288px;
-    @include tablet {
-        width: 100%;
-    }
-}
-
 .take-order__name {
     color: var(--white-color-text);
     font-weight: 500;
@@ -329,17 +322,9 @@
     }
 }
 
-.addcard-btn {
-    margin-left: auto;
-    margin-right: auto;
-    @include desktop {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
 .btn-first {
     margin-bottom: 16px;
+    width: 173px;
     @include tablet {
         margin-bottom: 24px;
     }
@@ -350,8 +335,11 @@
 }
 
 .take-order__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include desktop {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
     }
 }
